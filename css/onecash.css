@@ -1,0 +1,212 @@
+/* What is OneCash modal */
+#payment .payment_methods li .payment_box.payment_method_onecash {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#onecash-what-is-modal  img.onecash-modal-image {
+    display: block;
+}
+#onecash-what-is-modal  img.onecash-modal-image-mobile{
+    display: none;
+}
+
+@media only screen and (max-width : 480px) {
+    #onecash-what-is-modal  img.onecash-modal-image-mobile {
+        display: block;
+    }
+    #onecash-what-is-modal  img.onecash-modal-image{
+        display: none;
+    }
+}
+
+/* OneCash info in checkout */
+#what-is-onecash-trigger {
+    margin-top: 0;
+    margin-left: 0;
+    float: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+
+#onecash-logo {
+    height: 18px;
+    float: none;
+}
+
+#dt_method_onecashpayovertime span {
+    margin-left: 10px;
+}
+
+
+.woocommerce #payment .payment_method_onecash .form-list {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+}
+
+.woocommerce #payment .payment_method_onecash .form-alt {
+    display: inline-block; /* shrink-wrap the form, to make the footer align nicely */
+    max-width: 100%;
+    padding: 0px 0px 0px 0px !important;
+}
+
+.woocommerce #payment .payment_method_onecash .total-due p {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #A1A4A6;
+    margin: 0 5px 0 0;
+    text-transform: uppercase;
+    float: left;
+    height: 35px;
+    line-height: 38px;
+}
+
+.woocommerce #payment .payment_method_onecash .total-due span {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    height: 35px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.woocommerce #payment .payment_method_onecash .instalments {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.woocommerce #payment .payment_method_onecash .instalments .header-text {
+    font-family: Arial, sans-serif;
+    /*font-weight: 600;*/
+    /*font-size: 9px;*/
+    color: #379dd6;
+    margin: 10px 0;
+    /*text-transform: uppercase;*/
+    line-height: 20px;
+}
+
+.woocommerce #payment .payment_method_onecash .instalments .cost,
+.woocommerce #payment .payment_method_onecash .instalments .icon,
+.woocommerce #payment .payment_method_onecash .instalments .instalment {
+    display: table-row;
+    /*position: relative;*/
+}
+
+.woocommerce #payment .payment_method_onecash .instalments .icon:after {
+    content: "";
+    background: #f7f7f7;
+    display: block;
+    height: 1px;
+    left: 30px;
+    right: 30px;
+    margin-top: -5px;
+}
+
+.woocommerce #payment .payment_method_onecash img {
+    height: 18px;
+    margin-left: 10px;
+    /*margin-top: -5px;*/
+}
+
+
+.woocommerce #payment .payment_method_onecash .instalments li {
+    display: table-cell;
+    text-align: center;
+    padding: 0 10px;
+    border-bottom: 0px;
+}
+
+.woocommerce #payment .payment_method_onecash .instalments li:first-child {
+    padding-left: 0;
+}
+
+.woocommerce #payment .payment_method_onecash .instalments li:last-child {
+    padding-right: 0;
+}
+
+.woocommerce #payment .payment_method_onecash .instalments .cost {
+    font-size: 14px;
+    color: #379dd6;
+}
+
+.woocommerce #payment .payment_method_onecash .instalments .icon img {
+    /*width: 50%;*/
+    display: inline;
+    position: relative;
+    z-index: 1;
+    float: none;
+    height: 24px;
+    width: 24px;
+    margin: 0;
+}
+
+.woocommerce #payment .payment_method_onecash .instalments .instalment {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #A1A4A6;
+}
+
+.woocommerce #payment .payment_method_onecash .instalment-footer {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #636363;
+    text-align: center;
+}
+
+.woocommerce #payment .payment_method_onecash .instalment-footer p {
+    margin-bottom: 0px
+}
+
+.woocommerce #payment .payment_method_onecash .instalment-footer a {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #A1A4A6;
+    text-decoration: underline;
+}
+
+@media (min-width: 560px) {
+    .woocommerce #payment .payment_method_onecash .instalments li {
+        padding: 0 5px;
+    }
+
+    .woocommerce #payment .payment_method_onecash .instalments .header-text {
+        font-size: 12px;
+        text-align: center;
+        color: #636363;
+    }
+
+    .woocommerce #payment .payment_method_onecash .instalments .cost {
+        font-size: 12px;
+    }
+}
+
+/* By default, only show the callout text on the default checkout */
+#onecash-callout {
+    display: none;
+}
+
+.checkout-onepage-index #onecash-callout {
+    display: block;
+    margin-left: 0;
+}
+
+#loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    z-index: 1000;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
